@@ -1,0 +1,29 @@
+.chatbox-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.chat-wrapper {
+  width: 100%;
+}
+
+.chat-screen {
+  height: 400px;
+  border-radius: 4px;
+  background-color: var(--gray);
+  border: 1px solid #000;
+}
+
+.chat-input {
+  background-color: var(--gray);
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+}

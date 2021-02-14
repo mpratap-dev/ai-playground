@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}

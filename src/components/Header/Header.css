@@ -1,0 +1,43 @@
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  font-family: AmericanTypewriter;
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.menu {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.menu__items {
+  display: inline-block;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.menu__links {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.user-img {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: var(--gray);
+  padding: 5px;
+  border: 1px solid #000;
+}
