@@ -4,8 +4,9 @@ import TabContent from "./TabContent";
 
 const TabsContainer = () => {
   const [tabs, setTabs] = useState([{
+    id: 0,
     name: 'script.js', 
-    id: 0
+    code: 'function name (param) {return param;}'
   }]);
   
   const [activeTab, setActiveTab] = useState(0);
@@ -13,7 +14,7 @@ const TabsContainer = () => {
   return (
   <>
     <Tabs tabs={tabs} setTabs={setTabs} setActiveTab={setActiveTab} activeTab={activeTab} />
-    <TabContent tabs ={tabs} activeTab={activeTab} />
+    <TabContent tabs={tabs} activeTab={activeTab} setTabs={setTabs}/>
   </>
   );
 }

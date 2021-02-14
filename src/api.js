@@ -11,5 +11,6 @@ export default async function postData(url = '', data = {}) {
     referrerPolicy: 'no-referrer',
     body: JSON.stringify(data)
   });
-  return response.text();
+
+  return {status: response.status, text: await response.text()};
 }

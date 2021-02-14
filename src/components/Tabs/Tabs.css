@@ -10,10 +10,6 @@
   overflow: auto;
 }
 
-.tabs--container::-webkit-scrollbar {
-  height: 0;
-}
-
 .tab--links {
   font-size: 14px;
   padding: 10px 14px;

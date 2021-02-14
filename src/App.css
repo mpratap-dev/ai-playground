@@ -8,6 +8,11 @@ body {
   color: #FFFFFF;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .ml-2 {
   margin-left: 10px;
 }

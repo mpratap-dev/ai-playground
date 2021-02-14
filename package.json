@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "lodash.debounce": "^4.0.8",
     "monaco-editor-webpack-plugin": "^3.0.0",
     "react-app-rewired": "^2.1.8",
     "react-monaco-editor": "^0.42.0"

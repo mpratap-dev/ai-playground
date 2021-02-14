@@ -2,13 +2,21 @@ import './Tabs.css';
 import addSVG from '../../assets/svg/plus.svg';
 import closeSVG from '../../assets/svg/close.svg';
 import reloadSVG from '../../assets/svg/reload.svg';
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
+import { AppContext } from '../../contexts/AppContext';
+import { applyCodeAction, setTabAction } from '../../store/actions/tabs';
 
 const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
+  const {tabState, dispatchTab} = useContext(AppContext);
   const tabContainer = useRef(null);
+
   const addTab = () => {
     const lastTabId = tabs[tabs.length-1]?.id;
-    setTabs([...tabs, { name: `newScript${lastTabId+1}.js`, id: lastTabId+1 }]);
+    setTabs([...tabs, { 
+      name: `newScript${lastTabId+1}.js`, 
+      id: lastTabId+1,
+      code: '/* This is an empty tab.*/' 
+    }]);
     setActiveTab(lastTabId+1);
   };
 
@@ -22,6 +30,11 @@ const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
   };
 
   const makeTabActive = (id) => setActiveTab(id);
+
+  const applyCode = () => {
+    dispatchTab(setTabAction(tabs));
+    console.log(tabState, tabs)
+  }
 
   useEffect(() => {
     const currentTab = tabContainer.current.children[tabs.length-1];
@@ -55,7 +68,7 @@ const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
         <img src={addSVG} alt="add_tab" height="10" width="10" />
       </button>
       
-      <button className="apply-btn">
+      <button className="apply-btn" onClick={applyCode}>
         <img src={reloadSVG} alt="sync" height="13" width="13" className="reload-icon"/>
         <span className="ml-2">
           Apply changes

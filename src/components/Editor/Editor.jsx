@@ -1,9 +1,8 @@
 import './Editor.css';
 import MonacoEditor from 'react-monaco-editor';
-import { useState } from 'react';
 
-const Editor = ({content}) => {
-  const [code, setCode] = useState(content);
+const Editor = ({setTabs, tabs, id: tabIndex}) => {
+  const {code} = tabs.find(tab => tab.id === tabIndex);
 
   const options = { 
     selectOnLineNumbers: true, 
@@ -15,7 +14,13 @@ const Editor = ({content}) => {
     }
   };
 
-  const onChange = (newValue) => setCode(newValue);
+  const onChange = (newValue) => {
+    setTabs(tabs.map(({name, id, code}) => ({
+      name, 
+      id,
+      code: tabIndex === id ? newValue : code
+    })))
+  };
   const editorDidMount = (editor) => editor.focus();
 
   return (
