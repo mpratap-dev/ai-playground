@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ai-playground/static/css/main.bfa3b85d.chunk.css",
+    "main.js": "/ai-playground/static/js/main.15b30aaf.chunk.js",
+    "main.js.map": "/ai-playground/static/js/main.15b30aaf.chunk.js.map",
+    "runtime-main.js": "/ai-playground/static/js/runtime-main.634cd80d.js",
+    "runtime-main.js.map": "/ai-playground/static/js/runtime-main.634cd80d.js.map",
+    "static/css/2.92a3de7c.chunk.css": "/ai-playground/static/css/2.92a3de7c.chunk.css",
+    "static/js/2.9250631c.chunk.js": "/ai-playground/static/js/2.9250631c.chunk.js",
+    "static/js/2.9250631c.chunk.js.map": "/ai-playground/static/js/2.9250631c.chunk.js.map",
+    "static/js/3.c4d25350.chunk.js": "/ai-playground/static/js/3.c4d25350.chunk.js",
+    "static/js/3.c4d25350.chunk.js.map": "/ai-playground/static/js/3.c4d25350.chunk.js.map",
+    "static/js/4.bd39c480.chunk.js": "/ai-playground/static/js/4.bd39c480.chunk.js",
+    "static/js/4.bd39c480.chunk.js.map": "/ai-playground/static/js/4.bd39c480.chunk.js.map",
+    "editor.worker.js": "/ai-playground/editor.worker.js",
+    "editor.worker.js.map": "/ai-playground/editor.worker.js.map",
+    "index.html": "/ai-playground/index.html",
+    "static/css/2.92a3de7c.chunk.css.map": "/ai-playground/static/css/2.92a3de7c.chunk.css.map",
+    "static/css/main.bfa3b85d.chunk.css.map": "/ai-playground/static/css/main.bfa3b85d.chunk.css.map",
+    "static/js/2.9250631c.chunk.js.LICENSE.txt": "/ai-playground/static/js/2.9250631c.chunk.js.LICENSE.txt",
+    "static/media/bot.bd17c634.svg": "/ai-playground/static/media/bot.bd17c634.svg",
+    "static/media/close.84c5eb04.svg": "/ai-playground/static/media/close.84c5eb04.svg",
+    "static/media/codicon.css": "/ai-playground/static/media/codicon.4168b9c1.ttf",
+    "static/media/down-arrow.39bd4e27.svg": "/ai-playground/static/media/down-arrow.39bd4e27.svg",
+    "static/media/man.28ec5b21.png": "/ai-playground/static/media/man.28ec5b21.png",
+    "static/media/plus.82727587.svg": "/ai-playground/static/media/plus.82727587.svg",
+    "static/media/reload.2640bb29.svg": "/ai-playground/static/media/reload.2640bb29.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.634cd80d.js",
+    "static/css/2.92a3de7c.chunk.css",
+    "static/js/2.9250631c.chunk.js",
+    "static/css/main.bfa3b85d.chunk.css",
+    "static/js/main.15b30aaf.chunk.js"
+  ]
+}
