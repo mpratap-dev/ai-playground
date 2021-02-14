@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ai-playground/static/css/main.bfa3b85d.chunk.css",
+    "main.css": "/ai-playground/static/css/main.9b8ea96d.chunk.css",
     "main.js": "/ai-playground/static/js/main.15b30aaf.chunk.js",
     "main.js.map": "/ai-playground/static/js/main.15b30aaf.chunk.js.map",
     "runtime-main.js": "/ai-playground/static/js/runtime-main.634cd80d.js",
@@ -16,7 +16,7 @@
     "editor.worker.js.map": "/ai-playground/editor.worker.js.map",
     "index.html": "/ai-playground/index.html",
     "static/css/2.92a3de7c.chunk.css.map": "/ai-playground/static/css/2.92a3de7c.chunk.css.map",
-    "static/css/main.bfa3b85d.chunk.css.map": "/ai-playground/static/css/main.bfa3b85d.chunk.css.map",
+    "static/css/main.9b8ea96d.chunk.css.map": "/ai-playground/static/css/main.9b8ea96d.chunk.css.map",
     "static/js/2.9250631c.chunk.js.LICENSE.txt": "/ai-playground/static/js/2.9250631c.chunk.js.LICENSE.txt",
     "static/media/bot.bd17c634.svg": "/ai-playground/static/media/bot.bd17c634.svg",
     "static/media/close.84c5eb04.svg": "/ai-playground/static/media/close.84c5eb04.svg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.634cd80d.js",
     "static/css/2.92a3de7c.chunk.css",
     "static/js/2.9250631c.chunk.js",
-    "static/css/main.bfa3b85d.chunk.css",
+    "static/css/main.9b8ea96d.chunk.css",
     "static/js/main.15b30aaf.chunk.js"
   ]
 }
