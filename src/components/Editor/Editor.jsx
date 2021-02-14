@@ -9,6 +9,7 @@ const Editor = ({setTabs, tabs, id: tabIndex}) => {
     fontSize: 14,
     lineHeight: 30,
     automaticLayout: true,
+    renderLineHighlight: false,
     minimap: {
       enabled: false
     }

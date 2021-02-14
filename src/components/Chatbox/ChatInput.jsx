@@ -23,15 +23,15 @@ const ChatInput = ({chats, setChats}) => {
   const sendCodeToServer = async () => {
     const firstTabData = tabs.find(tab => !tab.id);
     const data = { code: `(${firstTabData.code})('${encodeURIComponent(reply)}')` };
-    const {status, text} = await postData(SUBMIT_URL, data);
-    
     setReply('');
-    console.log(status, text);
+
+    const {status, text} = await postData(SUBMIT_URL, data);
+
     if(status === 200) {
       const stateToSet = chats.map(({id, sender, message, status}) => ({
         id,
         sender,
-        message: (id === chats.length - 1 && sender === 'bot') ? text : message,
+        message: (id === chats.length - 1 && sender === 'bot') ? decodeURI(text) : message,
         status: (id === chats.length - 1 && sender === 'bot') ? 'done' : status
       }));
   
@@ -44,7 +44,7 @@ const ChatInput = ({chats, setChats}) => {
   useEffect(() => {
     const lastMessage = chats[chats?.length - 1];
     const isPending = lastMessage?.status === 'pending';
-    console.log('chats: ', isPending)
+
     if(isPending) {
       sendCodeToServer();
     }
@@ -57,7 +57,7 @@ const ChatInput = ({chats, setChats}) => {
         className="chat-input" 
         onChange={handleChange}
         value={reply}
-        placeholder="Type a message"
+        placeholder="Type a message and press Enter [ ⏎ ] to send"
       />
     </form>
   )

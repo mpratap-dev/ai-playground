@@ -1,3 +1,15 @@
+@keyframes bounce {
+  0% {
+    transform: translate(0, -2px);
+  } 
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 2px);
+  }
+}
+
 .chatbox-container {
   display: flex;
   height: 100%;
@@ -15,6 +27,12 @@
   border: 1px solid #000;
   padding: 20px;
   overflow: auto;
+}
+
+.chat--screen.empty-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .chat-input {
@@ -52,6 +70,12 @@
   background-color: var(--black);
 }
 
+.chat--bubble.pending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .chat--row.bot {
   flex-direction: row-reverse;
 }
@@ -59,4 +83,32 @@
 .chat--row.bot .chat--bubble {
   margin: 0 10px 0 0;
   background-color: var(--azul);
+}
+
+.no-message {
+  background: var(--black);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dots {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  background: var(--ice-blue);
+}
+
+.dots:nth-child(1) {
+  animation: bounce .3s linear .2s infinite alternate;
+}
+
+.dots:nth-child(2) {
+  animation: bounce .3s linear .4s infinite alternate;
+}
+
+.dots:nth-child(3) {
+  animation: bounce .3s linear .6s infinite alternate;
 }
