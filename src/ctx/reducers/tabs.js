@@ -1,4 +1,4 @@
-import { addTabAction } from "../actions/tabs";
+import {SET_TABS, ADD_TAB, REMOVE_TAB, APPLY_CODE} from '../actionTypes.js';
 
 export const initialState = {
   tabs: [{
@@ -10,12 +10,12 @@ export const initialState = {
 
 const tabReducer = (state, {type, payload}) => {
   switch(type) {
-    case 'SET_TABS':
+    case SET_TABS:
       return {
         ...state,
         tabs: payload
       } 
-    case 'ADD_TAB': 
+    case ADD_TAB: 
       const lastTabId = state.tabs[state.tabs?.length-1]?.id;
       return {
         ...state,
@@ -26,11 +26,11 @@ const tabReducer = (state, {type, payload}) => {
         }]
       };
 
-    case 'REMOVE_TAB': return {
+    case REMOVE_TAB: return {
       ...state, tabs: state.tabs.filter(tab => tab.id !== payload)
     }
 
-    case 'APPLY_CODE': return {
+    case APPLY_CODE: return {
       ...state,
       tabs: state.tabs.map(({name, id, code}) => ({
         name,

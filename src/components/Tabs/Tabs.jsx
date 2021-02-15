@@ -4,7 +4,7 @@ import closeSVG from '../../assets/svg/close.svg';
 import reloadSVG from '../../assets/svg/reload.svg';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { AppContext } from '../../contexts/AppContext';
-import { applyCodeAction, setTabAction } from '../../store/actions/tabs';
+import { setTabAction } from '../../ctx/actions/tabs';
 
 const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
   const [snackbarVisible, showSnackbar] = useState(false);

@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import TabsContainer from './components/Tabs/TabBar';
 import Chatbox from './components/Chatbox/Chatbox';
 import AppProvider from './contexts/AppContext';
-import tabReducer, { initialState } from './store/reducers/tabs';
+import tabReducer, { initialState } from './ctx/reducers/tabs';
 import './colors.css';
 import './App.css';
 import './grid.css';
