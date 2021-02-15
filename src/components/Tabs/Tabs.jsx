@@ -2,12 +2,13 @@ import './Tabs.css';
 import addSVG from '../../assets/svg/plus.svg';
 import closeSVG from '../../assets/svg/close.svg';
 import reloadSVG from '../../assets/svg/reload.svg';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { AppContext } from '../../contexts/AppContext';
 import { applyCodeAction, setTabAction } from '../../store/actions/tabs';
 
 const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
-  const {tabState, dispatchTab} = useContext(AppContext);
+  const [snackbarVisible, showSnackbar] = useState(false);
+  const {dispatchTab} = useContext(AppContext);
   const tabContainer = useRef(null);
 
   const addTab = () => {
@@ -33,7 +34,10 @@ const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
 
   const applyCode = () => {
     dispatchTab(setTabAction(tabs));
-    console.log(tabState, tabs)
+    showSnackbar(true);
+    setTimeout(() => {
+      showSnackbar(false);
+    }, 2000);
   }
 
   useEffect(() => {
@@ -74,6 +78,8 @@ const Tabs = ({tabs, setTabs, activeTab, setActiveTab}) => {
           Apply changes
         </span>
       </button>
+
+      <span className={`snackbar ${snackbarVisible ? 'show': ''}`}>Code Applied</span>
     </div>
   )
 }
