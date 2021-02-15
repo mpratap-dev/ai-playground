@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ai-playground/static/css/main.390ec809.chunk.css",
-    "main.js": "/ai-playground/static/js/main.84b31618.chunk.js",
-    "main.js.map": "/ai-playground/static/js/main.84b31618.chunk.js.map",
+    "main.js": "/ai-playground/static/js/main.605095e2.chunk.js",
+    "main.js.map": "/ai-playground/static/js/main.605095e2.chunk.js.map",
     "runtime-main.js": "/ai-playground/static/js/runtime-main.634cd80d.js",
     "runtime-main.js.map": "/ai-playground/static/js/runtime-main.634cd80d.js.map",
     "static/css/2.92a3de7c.chunk.css": "/ai-playground/static/css/2.92a3de7c.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.92a3de7c.chunk.css",
     "static/js/2.5591bc41.chunk.js",
     "static/css/main.390ec809.chunk.css",
-    "static/js/main.84b31618.chunk.js"
+    "static/js/main.605095e2.chunk.js"
   ]
 }
